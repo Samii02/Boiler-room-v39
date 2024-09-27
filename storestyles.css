@@ -75,7 +75,7 @@ footer {
 }
 
 .buy-button:hover {
-    background-color: #333;
+    background-color: #333; /* Färgen ändras vid hover */
 }
 
 /* Media queries för responsiv design */
