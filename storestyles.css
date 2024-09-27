@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.store-container {
+    padding: 20px;
+}
+
+.store-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+.grid-container {
+    display: grid; /* Aktiverar grid-layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumner på stora skärmar */
+    gap: 20px; /* Avstånd mellan produktkort */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    background-color: #ccc;
+}
+
+.product-name {
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 1.5rem); /* Responsiv storlek */
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2rem); /* Responsiv storlek */
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #333;
+}
+
+/* Media queries för responsiv design */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolumner på tabletter */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 kolumn på mobiler */
+    }
+}
