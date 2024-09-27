@@ -1,0 +1,63 @@
+.party {
+  width: auto;
+  margin-top: 30px;
+}
+
+.party-image {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.party-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.party-title {
+  font-size: clamp(30px, 4vw, 46px);}
+
+.party-description {
+  font-size: clamp(18px, 4vw, 24px);
+}
+
+.party-button {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: clamp(16px, 4vw, 24px);
+  text-transform: uppercase;
+  padding: 10px ;
+  cursor: pointer;
+  text-decoration: none;
+  width: 90%;
+}
+
+.party-button:hover {
+  background-color: #FFE1E1;
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .party-button {
+    width: 400px;
+  }
+
+  .party {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .party-button {
+    width: 500px;
+  }
+
+  .party {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
