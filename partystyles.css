@@ -16,8 +16,7 @@
 }
 
 .party-title {
-  font-size: clamp(30px, 4vw, 46px);
-}
+  font-size: clamp(30px, 4vw, 46px);}
 
 .party-description {
   font-size: clamp(18px, 4vw, 24px);
@@ -33,7 +32,6 @@
   padding: 10px ;
   cursor: pointer;
   text-decoration: none;
-  margin: 20px; 
   width: 90%;
 }
 
@@ -41,3 +39,25 @@
   background-color: #FFE1E1;
 }
 
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .party-button {
+    width: 400px;
+  }
+
+  .party {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .party-button {
+    width: 500px;
+  }
+
+  .party {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
