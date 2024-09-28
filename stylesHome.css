@@ -13,19 +13,33 @@ body{
     gap: 25px;
 }
 
-.section1, .section2, .section3{
+.section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     width: 100%;
+    background-color: rgb(211, 211, 211);
+    border-radius: 15px;
+    
 }
 
 #picture{
+    border-radius: 30px;
     max-width: 100%;
+    width: 100%;
+}
+
+.info, #picture{
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
 }
 
 .info{
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2rem);
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 1.5rem);
 }
 
 @media (min-width: 768px) {
@@ -40,9 +54,20 @@ body{
         height: 100%;
     }
     
-    .section1, .section2, .section3{
+    .section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+    }
+
+    #picture{
+        height: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+
+    #onlineShop{
+        order: 1;
     }
 }
