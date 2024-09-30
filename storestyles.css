@@ -23,6 +23,69 @@ footer {
     text-align: center;
 }
 
+:root {
+  --primary-color: #333;
+  --accent-color: #b5651d;
+  --text-color: white;
+  --font-size-base: clamp(16px, 1.5vw, 20px);
+  --font-size-heading: clamp(1.5rem, 2.5vw, 3rem);
+  --spacing: clamp(10px, 2vw, 20px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: var(--font-size-base);
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: var(--spacing);
+}
+
+.logo {
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing);  
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing);
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+  padding: var(--spacing);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+
+
 .store-container {
     padding: 20px;
 }
