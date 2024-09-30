@@ -3,6 +3,27 @@
 DOKUMENTATION Vecka 39: Introduktion till Frontend vs. Backend, Fördjupning i Responsiv design med Flexbox, Grid och Clamp, Introduktion till Agila metoder och gruppdynamik. 
 På fredagsmötet så kunde alla 4 komma till Scandic för att jobba, varav 3 kom tidigt till och med för att preppa. Efter Mandus genomgång så bestämde vi snabbt hur vi skulle dela upp arbetet för att effektivt bli färdiga samma dag. Vi jobbade på bra, tog paus vid behov och blev nästan helt färdiga med uppgiften samma dag. Resten jobbade vi individuellt med kontakt online under helgen på våra respektive delar och blev färdiga till söndagen.
 -------------------------------------------
+
+Textbeskrivning på flödesschema
+1. Användaren fyller i inloggningsformuläret. På frontend-sidan HTML/css, skriver man in sitt användarnamn och lösenord
+2. Användaren klickar på 'Logga in'. När man klickar skickas en POST-förfrågan från frontend till backend. Denna begäran innehåller inloggningsinfo (användarnamn och lösenord.)
+3. Backend validerar inloggningsuppgifterna: Backend (en server) tar emot förfrågan och kontrollerar om de inmatade uppgifterna stämmer överens med databasen.
+- Om uppg matchar, generas en session eller en JWT (JSON Web Token) för att autentisera användaren.
+- Om uppg inte matchar, skickas felmeddelande tillbaka till frontend
+4. Backend skickar svar: Om valideringen lyckas skickar backend tillbaka en bekräftelse om att inloggningen är framgångsrik och eventuellt en sessions-cookie eller token. Vid fel skickas ett svar som informerar om felaktig inloggning.
+5. Frontend visar användaren ett meddelande: beroende på svaret från backend.
+- Vid framgång omdirigeras användaren till sin startsida eller profil
+- Vid fel får användaren ett felmeddelande på inloggningssidan, tex "felaktigt användarnamn eller lösenord".
+
+1. Användaren fyller i sina inloggningsuppgifter (användarnamn och lösenord) på frontend.
+2. En POST-förfrågan skickas till backend med användarens uppgifter.
+3. Backend validerar uppgifterna mot databasen.
+4. Backend skickar tillbaka ett svar (antingen framgång eller fel).
+5. Frontend uppdateras baserat på svaret och visar om inloggningen lyckades eller misslyckades.
+
+![alt text](./flödesschemaFB.png)
+
+-------------------------------------------
 Vecka 39: Introduktion till Frontend vs. Backend, Fördjupning i Responsiv design med Flexbox, Grid och Clamp, Introduktion till Agila metoder och gruppdynamik
 
 Tema:
