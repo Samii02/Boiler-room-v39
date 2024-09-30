@@ -1,5 +1,8 @@
 # Boiler-room-v39
-
+-------------------------------------------
+DOKUMENTATION Vecka 39: Introduktion till Frontend vs. Backend, Fördjupning i Responsiv design med Flexbox, Grid och Clamp, Introduktion till Agila metoder och gruppdynamik. 
+På fredagsmötet så kunde alla 4 komma till Scandic för att jobba, varav 3 kom tidigt till och med för att preppa. Efter Mandus genomgång så bestämde vi snabbt hur vi skulle dela upp arbetet för att effektivt bli färdiga samma dag. Vi jobbade på bra, tog paus vid behov och blev nästan helt färdiga med uppgiften samma dag. Resten jobbade vi individuellt med kontakt online under helgen på våra respektive delar och blev färdiga till söndagen.
+-------------------------------------------
 Vecka 39: Introduktion till Frontend vs. Backend, Fördjupning i Responsiv design med Flexbox, Grid och Clamp, Introduktion till Agila metoder och gruppdynamik
 
 Tema:
